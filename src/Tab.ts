@@ -1,19 +1,19 @@
 export class Tab {
-    constructor(url: string, root: HTMLDivElement, active?: boolean) { 
+    constructor(url: string, root: HTMLDivElement, content: ``, active: boolean = false) { 
         this._url = url;
         this._root = root;
-        this.active = active || false;
+        this.active = active;
     }
     private _root: HTMLDivElement;
-    private _content: HTMLIFrameElement;
+    private _content: HTMLDivElement;
     private _url: string;
     private _load: Event = new Event("load");
     get url(): string {
         return this._url;
     }
     public INIT(): void {
-        this._content = document.createElement("iframe");
-        this._content.src = this._url;
+        this._content = document.createElement("div");
+        this._content.innerHTML = ``
         this._root.appendChild(this._content);
         
     }
