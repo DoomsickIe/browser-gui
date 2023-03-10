@@ -1,0 +1,19 @@
+{
+  "name": "browser-interface",
+  "version": "1.0.0",
+  "description": "creates a tab-based interface very similar to most browsers",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"test\""
+  },
+  "keywords": [
+    "gui",
+    "tabs",
+    "browser"
+  ],
+  "author": "Doomsickle",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}
